@@ -7,7 +7,7 @@ class UsersControllerTest < ActionController::TestCase
 
   test "should get index" do
     get :index
-    assert_response :success
+    assert_response :unauthorized
     assert_not_nil assigns(:users)
   end
 
